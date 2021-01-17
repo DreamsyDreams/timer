@@ -1,0 +1,71 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+body{
+    background-color: #000756;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    min-height: 100vh;
+}
+
+.time-input{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 55px;
+    padding: 0;
+    margin: 0;
+}
+
+.time-input > input {
+    color: aliceblue;
+    background-color: transparent;
+    font-size: 55px;
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 65px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button > button {
+    text-transform: uppercase;
+    background-color: #007F7C;
+    font-size: 40px;
+    padding: 4px 8px;
+    margin: 4px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.button > button:active{
+    outline: none;
+    border: none;
+    color: gray;
+}
+
+.time-input > input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+.time-input > input[type=number] {
+    appearance: none;
+}
