@@ -2,7 +2,7 @@
 const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
-let startButton = document.getElementById('begin');
+let beginButton = document.getElementById('begin');
 
 //Function to begin the timer
 function begin() {
@@ -12,6 +12,6 @@ function begin() {
     window.location = '../start/index.html';
 }
 
-startButton.addEventListener('click', button => {
+beginButton.addEventListener('click', button => {
     begin();
 })
